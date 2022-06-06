@@ -1,0 +1,1568 @@
+@font-face {
+  font-family: "aprikas";
+  src: url("/fonts/aprikas/Aprikas_bold_Demo.otf");
+}
+
+@font-face {
+  font-family: "agathoboldcaps";
+  src: url("/fonts/agatho/Agatho_\ BoldCAPS.otf");
+}
+
+@font-face {
+  font-family: "gillsansc";
+  src: url("/fonts/GillSansC.woff2");
+}
+
+@font-face {
+  font-family: "gillsansclight";
+  src: url("/fonts/GillSansLightC.woff2");
+}
+
+@font-face {
+  font-family: "gillsanscbold";
+  src: url("/fonts/GillSansC-Bold.woff2");
+}
+
+@font-face {
+  font-family: "monbaiti";
+  src: url("/fonts/Mongolian\ Baiti.woff2");
+}
+
+@font-face {
+  font-family: "nova";
+  src: url("/fonts/NOVABOLD.otf");
+}
+
+html,
+body {
+  position: relative;
+  width: 100vw;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+P {
+  font-family: "gillsansc";
+}
+
+a {
+  text-decoration: none;
+  color: rgb(87, 83, 83);
+}
+
+a:hover {
+  color: rgb(0, 0, 0);
+}
+
+
+#link {
+  z-index: 100;
+}
+
+.header {
+  width: 100vw;
+  height: 80px;
+  position: fixed;
+  background-color: #ffffff;
+  transition: transform 0.4s;
+  z-index: 100;
+}
+
+.scroll-down .header {
+  transform: translate3d(0, -100%, 0);
+}
+.scroll-up .header {
+  transform: none;
+}
+
+.container1 {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+@media (min-width: 601px) {
+  .container1 {
+    background: url("/medias/neutral/photo1.jpg") center center no-repeat fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+}
+
+.homelink {
+  text-decoration: none;
+  color: rgb(139, 48, 20) !important;
+}
+
+.neutraltitle {
+  position: absolute;
+  top: 53vh;
+  left: 5%;
+  font-family: "nova";
+  font-size: 200px;
+  font-weight: lighter;
+  color: rgb(100, 53, 46);
+}
+
+.leilarossard {
+  position: absolute;
+  font-family: "gillsansc";
+  color: rgb(139, 48, 20);
+  font-size: 38px;
+  font-weight: bold;
+  top: 20px;
+  left: 5%;
+}
+
+.colors {
+  color: rgb(232, 86, 56);
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
+.colors:hover {
+  font-weight: 1000;
+  color: rgb(232, 86, 56);
+}
+
+.neutral {
+  color: rgb(191, 182, 162);
+  font-size: 24px;
+  font-weight: 1000;
+  letter-spacing: 0px;
+  text-decoration-line: underline;
+  text-underline-offset: 5px;
+}
+.neutral:hover {
+  color: rgb(191, 182, 162);
+}
+
+.about {
+  color: rgb(43, 26, 21);
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0px;
+}
+
+.about:hover {
+  color: rgb(43, 26, 21);
+  font-weight: 1000;
+  cursor: pointer;
+}
+
+
+.menu1 {
+  position: absolute;
+  color: rgb(151, 129, 115);
+  opacity: 100;
+  font-family: "gillsansc";
+  top: 26px;
+  right: 10%;
+  letter-spacing: 3px;
+}
+
+.stylistephoto {
+  font-family: "monbaiti";
+  font-size: 45px;
+  text-align: center;
+  width: 800px;
+  color: white;
+}
+
+.voirsuite {
+  font-family: "gillsansc";
+  color: rgb(117, 71, 62);
+  font-size: 22px;
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+.voirsuite:hover {
+  color: rgb(60, 36, 29);
+  transition: 0.5s;
+}
+
+img {
+  transition: 0.5s ease-in-out;
+  vertical-align: middle;
+  border-style: none;
+  filter: brightness(98%);
+}
+
+img:hover {
+  cursor: pointer;
+  filter: brightness(110%);
+}
+
+p1 {
+  padding-left: 100px;
+}
+
+.container2 {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 50px;
+  padding-bottom: 10px;
+}
+
+.canapediv {
+  margin-right: 40px;
+  text-align: start;
+  line-height: 10px;
+  font-weight: 400;
+  color: rgb(87, 83, 83);
+  transition: 0.5s;
+}
+
+.canapediv:hover,
+.canape2div:hover + #canape {
+  color: rgb(0, 0, 0);
+  transition: 0.5s;
+}
+
+.canape2div {
+  margin-right: 40px;
+  text-align: start;
+  font-weight: 400;
+  color: rgb(87, 83, 83);
+}
+
+.guideinspi,
+.salonnature {
+  color: rgb(87, 83, 83);
+}
+
+.canape2div:hover .guideinspi {
+  color: rgb(0, 0, 0);
+}
+.canape2div:hover .salonnature {
+  color: rgb(0, 0, 0);
+}
+
+.guideinspi {
+  font-size: 10px;
+  margin-top: -10px;
+  color: rgb(87, 83, 83);
+}
+
+.catalogue {
+  font-size: 9px;
+  margin-top: -10px;
+}
+
+.lineprojets {
+  padding-top: 100px;
+  width: 100vw;
+  display: flex;
+  justify-content: end;
+}
+
+#lineprojets {
+  width: 1160px;
+}
+
+.titlecontainer {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  font-family: "nova";
+  font-size: 300px;
+  font-weight: lighter;
+  color: rgb(221, 213, 199);
+  padding-bottom: 10px;
+}
+
+.containertextile {
+  position: relative;
+  height: 600px;
+  margin-top: 50px;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  background-color: rgb(87, 49, 32);
+  transition: opacity 2s ease-in-out;
+}
+
+.textileword {
+  position: absolute;
+  top: -170px;
+  font-family: "nova";
+  font-size: 150px;
+  font-weight: lighter;
+  color: rgb(209, 208, 195);
+  transition: opacity 2s ease-in-out;
+}
+
+.textphototextile {
+  position: absolute;
+  top: 65px;
+  right: 30%;
+  font-size: 14px;
+  line-height: 1px;
+  text-align: start;
+  color: #ffffff;
+  width: 400px;
+  transition: opacity 2s ease-in-out;
+}
+
+.textilephoto {
+  position: absolute;
+  top: 100px;
+  left: 20%;
+}
+
+.textcataloguetextile {
+  font-size: 8px;
+  transition: opacity 2s ease-in-out;
+}
+
+.decouvrirtextile {
+  color: rgb(206, 165, 138);
+  text-decoration: underline;
+  margin-left: 100px;
+  margin-top: 50px;
+  transition: opacity 2s ease-in-out;
+}
+
+img.photo2 {
+  max-height: 500px;
+}
+
+#insta1,
+#insta2,
+#insta3,
+#insta4,
+#insta5,
+#insta6 {
+  height: 100%;
+  max-height: 250px;
+}
+
+.containertextile:hover #rightarrow {
+  opacity: 1;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.containerphototextile:hover #rightarrow {
+  opacity: 1;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.containerphototextile {
+  position: relative;
+}
+
+#rightarrow {
+  position: absolute;
+  top: 380px;
+  right: 10%;
+  opacity: 1;
+  transition-property: 0.5s;
+}
+
+.containerarty {
+  position: absolute;
+  width: 100vw;
+  margin-top: 100px;
+  margin-left: 200px;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+  z-index: -1;
+}
+
+.artyword {
+  position: absolute;
+  margin-left: 900px;
+  margin-top: -100px;
+  font-family: "gillsansc";
+  font-size: 100px;
+  font-weight: bolder;
+  color: rgb(209, 208, 195);
+}
+
+.textphotoarty {
+  position: absolute;
+  top: 470px;
+  left: 310px;
+  font-size: 14px;
+  line-height: 1px;
+  text-align: start;
+  color: #ffffff;
+  width: 400px;
+}
+
+#photo13 {
+  position: absolute;
+  top: -10px;
+  left: 300px;
+}
+
+.textcataloguearty {
+  font-size: 10px;
+}
+
+.decouvrirarty {
+  position: absolute;
+  top: 150px;
+  left: 950px;
+  width: 200px;
+  color: rgb(206, 165, 138);
+  text-decoration: underline;
+}
+
+.containerarty:hover #rightarrow2 {
+  opacity: 1;
+  transition: 1s;
+  cursor: pointer;
+}
+
+#rightarrow2 {
+  position: absolute;
+  right: 20%;
+  top: 200px;
+  transition-property: 0.5s;
+}
+
+.containerslow {
+  width: 100vw;
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 200px;
+  text-align: center;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 2s ease-in-out;
+}
+
+.slowword {
+  position: absolute;
+  width: 300px;
+  margin-left: 900px;
+  margin-top: -10px;
+  font-family: "gillsansc";
+  font-size: 100px;
+  font-weight: bolder;
+  color: rgb(209, 208, 195);
+  transition: opacity 0.5s ease-in-out;
+}
+
+.textphotoslow {
+  position: absolute;
+  top: 470px;
+  left: 280px;
+  font-size: 14px;
+  line-height: 1px;
+  text-align: start;
+  color: #ffffff;
+  width: 400px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.textcatalogueslow {
+  font-size: 10px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.decouvrirslow {
+  position: absolute;
+  top: 260px;
+  left: 1050px;
+  width: 150px;
+  color: rgb(206, 165, 138);
+  text-decoration: underline;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.containertextile:hover #rightarrow3 {
+  opacity: 1;
+  transition: 1s;
+  cursor: pointer;
+}
+
+#rightarrow3 {
+  position: absolute;
+  right: 20%;
+  top: 200px;
+  transition-property: 0.5s;
+}
+
+#photo14 {
+  position: absolute;
+  left: 265px;
+  transition: opacity 0.5s ease-in-out;
+  z-index: -1;
+}
+
+#photo14:hover {
+  cursor: default;
+  filter: none;
+  transition: none;
+}
+
+.instagramcontainer {
+  display: flex;
+  width: 100vw;
+  height: 350px;
+  align-content: center;
+  justify-content: space-around;
+  background-color: rgb(245, 243, 231);
+  padding-top: 100px;
+}
+
+.footer {
+  display: flex;
+  width: 100vw;
+  height: 200px;
+  justify-content: space-between;
+  background-color: rgb(170, 166, 148);
+}
+
+.signature {
+  font-size: 10px;
+  letter-spacing: 4px;
+  margin-left: 100px;
+  margin-top: 50px;
+  color: rgb(255, 255, 255);
+}
+
+.endnote {
+  color: #000000;
+  font-family: "monbaiti";
+  text-align: start;
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 1px;
+}
+
+#copyright {
+  padding-right: 10px;
+  padding-top: 20px;
+}
+
+.mailcontact {
+  margin-right: 200px;
+  margin-top: 80px;
+  letter-spacing: 1px;
+  color: rgb(255, 255, 255);
+}
+
+.formmail {
+  display: flex;
+  height: 30px;
+  width: 150px;
+  align-items: center;
+}
+
+#arrowmail {
+  border-right: solid white 2px;
+  border-top: solid white 2px;
+  border-bottom: solid white 2px;
+  width: 30px;
+  height: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: end;
+}
+
+.contactme {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  font-family: "gillsansc";
+  letter-spacing: 3px;
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  border: solid white 2px;
+}
+
+.mail {
+  position: absolute;
+  font-family: "gillsansclight";
+  font-weight: lighter;
+  margin-left: 126px;
+  margin-top: -60px;
+}
+
+.textcontainer2 {
+  position: absolute;
+  left: 40px;
+  margin-top: 260px;
+}
+
+.follow {
+  font-family: "gillsansclight";
+  font-weight: 1000;
+  color: rgb(83, 77, 77);
+}
+
+#logo {
+  color: rgb(255, 255, 255);
+  width: 40px;
+  margin-top: 20px;
+  margin-left: 2px;
+}
+
+@media screen and (max-width: 1500px) {
+
+
+  .header {
+    height: 70px !important;
+  }
+
+  .leilarossard {
+    font-size: 30px !important;
+  }
+
+  .stylistephoto {
+    width: 400px !important;
+    font-size: 24px !important;
+  }
+
+  .voirsuite {
+    font-size: 18px !important;
+  }
+
+  .stylistephoto2 {
+    width: 400px !important;
+    font-size: 24px !important;
+    top: 500px !important;
+    left: 220px !important;
+  }
+
+  .voirsuite2 {
+    font-size: 18px !important;
+    top: 570px !important;
+    left: 350px !important;
+  }
+
+  .neutraltitle {
+    font-size: 160px !important;
+  }
+
+  .colorstitle {
+    font-size: 160px !important;
+    top: 170px !important;
+  }
+
+  .titlecontainer, .titlecontainer2 {
+    font-size: 220px !important;
+  }
+
+  .container2 {
+    margin-left: 20px !important;
+  }
+
+  .canape2div, .canapediv, .canapediv2 {
+    font-size: 12px !important;
+  }
+
+  #image1bis {
+    width: 620px !important;
+    margin-left: 750px !important;
+    margin-top: 120px !important;
+  }
+
+  .textphototextile {
+    right: 12% !important;
+  }
+
+  .textileword {
+    margin-left: 0px !important;
+  }
+
+  #photo2,
+  #photo3,
+  #photo4,
+  #photo6,
+  #photo7,
+  #photo8,
+  #photo9 {
+    height: 420px !important;
+  }
+
+  #photo5,
+  #photo10 {
+    height: 420px !important;
+  }
+  
+  #photo2colors,
+  #photo3colors,
+  #photo4colors,
+  #photo6colors,
+  #photo7colors,
+  #photo8colors,
+  #photo9colors {
+    height: 420px !important;
+  }
+
+  #photo5colors,
+  #photo10colors {
+    height: 420px !important;
+  }
+
+  .containerdesignword {
+    margin-left: 700px !important;
+  }
+
+  .blockphotodesign {
+    margin-left: -170px !important;
+  }
+
+  #photo15colors {
+    left: 950px !important;
+  }
+
+  .slowword2 {
+    left: 810px !important;
+  }
+
+  .textphotoslow2 {
+    left: 120px !important;
+  }
+
+  #photo13colors {
+    left: 150px !important;
+  }
+
+  #photo16colors {
+    left: 250px !important;
+  }
+
+  .minimalword {
+    left: 660px !important;
+  }
+
+  .textphotominimal {
+    left: 250px !important;
+  }
+
+  .decouvrirminimal {
+    left: 900px !important;
+  }
+
+
+  .textphototextile {
+    margin-left: 870px !important;
+  }
+
+  #rightarrow {
+    margin-left: 182px !important;
+  }
+
+  .containerarty {
+    margin-left: 0px !important;
+  }
+
+  #rightarrow2, #rightarrow3 {
+    left: 1350px !important;
+  }
+
+  .containerslow {
+    margin-left: 0px !important;
+  }
+
+  #insta1,
+  #insta2,
+  #insta3,
+  #insta4,
+  #insta5,
+  #insta6 {
+    height: 200px !important;
+  }
+
+  .lineabout {
+    margin-top: 70px !important;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  
+
+  .menu1 {
+    right: 8% !important;
+  }
+
+  .stylistephoto {
+    width: 420px !important;
+    font-size: 24px !important;
+  }
+
+  .stylistephoto2 {
+    top: 500px !important;
+    left: 120px !important;
+    width: 420px !important;
+    font-size: 24px !important;
+  }
+
+  .voirsuite {
+    font-size: 18px !important;
+  }
+
+  .voirsuite2 {
+    top: 570px !important;
+    font-size: 16px !important;
+    left: 260px !important;
+  }
+
+  .neutraltitle {
+    font-size: 140px !important;
+  }
+
+  .colorstitle {
+    font-size: 140px !important;
+    margin-top: -120px !important;
+  }
+
+  #image1bis {
+    width: 620px !important;
+    margin-left: 650px !important;
+    margin-top: 120px !important;
+  }
+
+  .titlecontainer, .titlecontainer2 {
+    font-size: 220px !important;
+  }
+
+  .lineprojets {
+    display: none !important;
+  }
+
+  .canape2div, .canapediv, .canapediv2 {
+    font-size: 11px !important;
+  }
+
+  .containerarty, .containerslow {
+    margin-left: -150px !important;
+  }
+
+  .textphototextile {
+    right: 10% !important;
+  }
+
+  .textileword {
+    margin-left: 0px !important;
+  }
+
+  .blockphotodesign {
+    margin-left: -300px !important;
+  }
+
+  .containerdesignword {
+    margin-left: 600px !important;
+  }
+
+  .containerarty2 {
+    margin-left: -50px !important;
+  }
+
+  .containerminimal {
+    margin-left: -100px !important;
+  }
+
+  .containerslow2 {
+    margin-left: -50px;
+  }
+
+  #rightarrow {
+    right: 5%;
+  }
+
+  #rightarrowcolors1, #rightarrowcolors2, #rightarrowcolors3, #rightarrowcolors4 {
+    right: 1%;
+  }
+
+  #rightarrowcolors3 {
+    right: -1% !important;
+  }
+
+  #photo2,
+  #photo3,
+  #photo4,
+  #photo6,
+  #photo7,
+  #photo8,
+  #photo9 {
+    height: 380px !important;
+  }
+
+  #photo5,
+  #photo10 {
+    height: 380px !important;
+  }
+
+  #photo2colors,
+  #photo3colors,
+  #photo4colors,
+  #photo6colors,
+  #photo7colors,
+  #photo8colors,
+  #photo9colors {
+    height: 380px !important;
+  }
+
+  #photo5colors,
+  #photo10colors {
+    height: 380px !important;
+  }
+
+  .instagramcontainer {
+    height: 240px !important;
+    padding-top: 40px !important;
+  }
+
+  .textcontainer2 {
+    margin-top: 180px !important;
+    left: 30px !important;
+  }
+
+  #insta1,
+  #insta2,
+  #insta3,
+  #insta4,
+  #insta5,
+  #insta6 {
+    height: 180px !important;
+  }
+
+  .stylistetitle {
+    margin-left: 620px !important;
+  }
+
+  .text1 {
+    top: 420px !important;
+    left: 900px !important;
+  }
+
+  .text2 {
+    top: 580px !important;
+  }
+
+  .lineabout {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #photo2,
+  #photo3,
+  #photo4,
+  #photo6,
+  #photo7,
+  #photo8,
+  #photo9 {
+    height: 300px !important;
+  }
+
+  #photo5,
+  #photo10 {
+    height: 200px !important;
+  }
+
+  #insta1,
+  #insta2,
+  #insta3,
+  #insta4,
+  #insta5,
+  #insta6 {
+    height: 180px !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+}
+
+@media screen and (max-width: 850px) {
+  p {
+    font-size: 12px !important;
+  }
+
+  .leilarossard {
+    font-size: 36px !important;
+  }
+
+  .menu1 {
+    top: 25px !important;
+    right: 5% !important;
+  }
+
+  .colors,
+  .colors2,
+  .about,
+  .about2,
+  .neutral,
+  .neutral2,
+  .neutral-about {
+    font-size: 14px !important;
+    text-decoration: none !important;
+  }
+
+  .about-about {
+    font-size: 14px !important;
+  }
+
+  .container1 {
+    height: 840px !important;
+    background-image: url("/medias/neutral/photo1mobile.jpg") !important;
+    background-size: 100vw auto !important;
+  }
+
+  .container1bis {
+    height: 690px !important;
+  }
+
+  .stylistephoto {
+    width: 440px !important;
+    font-size: 20px !important;
+  }
+
+  .stylistephoto2 {
+    text-align: end !important;
+    width: 440px !important;
+    top: 170px !important;
+    left: 230px !important;
+    font-size: 20px !important;
+  }
+
+  .neutraltitle {
+    font-size: 100px !important;
+  }
+
+  .header2 {
+    height: 100px !important;
+  }
+
+  .colorstitle {
+    font-size: 100px !important;
+    position: absolute !important;
+    left: -100px !important;
+    top: 170px !important;
+    z-index: 100 !important;
+  }
+
+  .voirsuite {
+    font-size: 18px !important;
+  }
+
+  .voirsuite2 {
+    font-size: 18px !important;
+    top: 780px !important;
+    left: 330px !important;
+  }
+
+  .lineprojets {
+    display: none !important;
+  }
+
+  .titlecontainer {
+    font-size: 120px !important;
+  }
+
+  .titlecontainer2 {
+    font-size: 120px !important;
+  }
+
+  .container2 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-evenly !important;
+    width: 100vw !important;
+    margin-top: 0px !important;
+    margin-left: 0px !important;
+  }
+
+  .container2bis {
+    display: flex !important;
+    justify-content: space-evenly !important;
+    width: 100vw !important;
+    flex-wrap: wrap !important;
+    margin-top: 0px !important;
+    text-align: center !important;
+    padding-bottom: 0px !important;
+  }
+
+  .canapediv {
+    margin-top: 20px !important;
+    margin-right: 0px !important;
+  }
+
+  .canapediv2 {
+    align-self: center !important;
+    margin-top: 20px !important;
+    margin-right: 0px !important;
+  }
+
+  .canape2div {
+    align-self: center !important;
+    margin-top: 20px !important;
+    margin-right: 0px !important;
+    margin-bottom: 0px !important;
+  }
+
+  .titreshoot,
+  .catalogue,
+  .salonnature,
+  .guideinspi {
+    text-align: left !important;
+  }
+
+  #photo2,
+  #photo3,
+  #photo6,
+  #photo7,
+  #photo8,
+  #photo9 {
+    height: 420px !important;
+  }
+
+  #photo4,
+  #photo5,
+  #photo10 {
+    height: 650px !important;
+  }
+
+  #image1bis {
+    width: 550px !important;
+    margin-left: 15% !important;
+    margin-top: 70px !important;
+  }
+
+  #photo2colors,
+  #photo3colors,
+  #photo6colors,
+  #photo7colors,
+  #photo9colors,
+  #photo10colors {
+    height: 420px !important;
+  }
+
+  #photo4colors,
+  #photo5colors,
+  #photo8colors {
+    height: 550px !important;
+  }
+
+  .containertextile {
+    display: none !important;
+  }
+
+  .instagramcontainer {
+    width: 100vw !important;
+    height: auto !important;
+    justify-content: space-evenly !important;
+    margin-top: 20px !important;
+    padding-top: 40px !important;
+    padding-bottom: 20px !important;
+  }
+
+  .textcontainer2 {
+    margin-top: -30px !important;
+    left: 10px !important;
+  }
+
+  #insta1,
+  #insta6 {
+    display: none !important;
+  }
+
+  #insta2,
+  #insta4,
+  #insta3,
+  #insta5 {
+    height: 130px !important;
+    margin-top: 10px !important;
+  }
+
+  .containertextile2 {
+    display: none !important;
+  }
+
+  .signature {
+    font-size: 8px !important;
+    margin-left: 50px !important;
+  }
+
+  .endnote {
+    width: 300px !important;
+    margin-left: 0px !important;
+  }
+
+  .mailcontact {
+    margin-right: 0px !important;
+    margin-top: 80px !important;
+    margin-right: 100px !important;
+  }
+
+  .mail {
+    margin-left: 130px !important;
+    margin-top: -40px !important;
+  }
+
+  .formmail {
+    margin-left: 0px !important;
+  }
+
+  .contactme {
+    font-size: 9px !important;
+  }
+
+  .aboutcontainer {
+    height: 640px !important;
+  }
+
+  #salonleila {
+    position: absolute !important;
+    top: 100px !important;
+    left: -100px !important;
+    width: 430px !important;
+  }
+
+  #lineabout {
+    display: none !important;
+  }
+
+  .text1 {
+    display: none !important;
+  }
+
+  .text2 {
+    position: absolute !important;
+    width: 280px !important;
+    top: 460px !important;
+    left: 500px !important;
+  }
+
+  .stylistetitle {
+    position: absolute !important;
+    margin-top: 80px !important;
+    margin-left: 50px !important;
+    font-size: 40px !important;
+    font-weight: bolder !important;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  p {
+    font-size: 10px!important;
+  }
+
+  .leilarossard {
+    font-size: 26px!important;
+  }
+
+  .menu1 {
+    width: 150px !important;
+    top: 10px !important;
+    right: 5% !important;
+  }
+
+  .colors,
+  .colors2,
+  .about,
+  .about2,
+  .neutral,
+  .neutral2,
+  .neutral-about {
+    font-size: 12px !important;
+    text-decoration: none !important;
+  }
+
+  .about-about {
+    font-size: 12px !important;
+    text-decoration-line: none !important;
+  }
+
+  .container1 {
+    height: 440px !important;
+    background-image: url("/medias/neutral/photo1mobile.jpg") !important;
+    background-size: 100vw auto !important;
+  }
+
+  .container1bis {
+    height: 390px !important;
+  }
+
+  .stylistephoto {
+    width: 240px !important;
+    font-size: 14px!important;
+  }
+
+  .stylistephoto2 {
+    text-align: end !important;
+    width: 240px !important;
+    top: 150px !important;
+    left: 95px !important;
+    font-size: 14px !important;
+  }
+
+  .neutraltitle {
+    font-size: 60px !important;
+    top: 70vw !important;
+  }
+
+  .header2 {
+    height: 100px !important;
+  }
+
+  .colorstitle {
+    font-size: 55px !important;
+    position: absolute !important;
+    left: -150px !important;
+    top: 180px !important;
+    z-index: 100 !important;
+  }
+
+  .voirsuite {
+    font-size: 11px !important;
+  }
+
+  .voirsuite2 {
+    font-size: 12px !important;
+    top: 500px !important;
+    left: 140px !important;
+  }
+
+  .lineprojets {
+    display: none !important;
+  }
+
+  .titlecontainer {
+    font-size: 70px !important;
+  }
+
+  .titlecontainer2 {
+    font-size: 70px !important;
+    padding-bottom: 20px !important;
+  }
+
+  .container2 {
+    margin-top: 0px !important;
+    flex-wrap: wrap !important;
+    text-align: center !important;
+  }
+
+  .container2bis {
+    margin-top: 0px !important;
+    flex-wrap: wrap !important;
+    text-align: center !important;
+    padding-bottom: 0px !important;
+  }
+
+  .canapediv {
+    width: 300px !important;
+    margin-top: 20px !important;
+    margin-right: 0px !important;
+  }
+
+  .canapediv2 {
+    width: 300px !important;
+    margin-top: 20px !important;
+    margin-right: 0px !important;
+  }
+
+  .canape2div {
+    width: 300px !important;
+    margin-top: 20px !important;
+    margin-right: 0px !important;
+    margin-bottom: 0px !important;
+  }
+
+  .titreshoot,
+  .catalogue,
+  .salonnature,
+  .guideinspi {
+    text-align: left !important;
+  }
+
+  #photo2,
+  #photo6,
+  #photo7,
+  #photo8,
+  #photo9 {
+    height: 430px !important;
+  }
+
+  #photo4,
+  #photo5,
+  #photo10 {
+    height: 225px !important;
+  }
+
+  #photo3 {
+    display: none !important;
+  }
+
+  #image1bis {
+    width: 300px !important;
+    margin-left: 12% !important;
+    margin-top: 40px !important;
+  }
+
+  #photo2colors,
+  #photo3colors,
+  #photo6colors,
+  #photo7colors,
+  #photo9colors,
+  #photo10colors {
+    height: 430px !important;
+  }
+
+  #photo4colors,
+  #photo5colors,
+  #photo8colors {
+    height: 225px !important;
+  }
+
+  .containertextile {
+    display: none !important;
+  }
+
+  .instagramcontainer {
+    width: 100vw !important;
+    height: auto !important;
+    justify-content: space-evenly !important;
+    margin-top: 20px !important;
+    padding-top: 40px !important;
+    padding-bottom: 20px !important;
+  }
+
+  .textcontainer2 {
+    margin-top: -30px !important;
+    left: 10px !important;
+  }
+
+  #insta1,
+  #insta6 {
+    display: none !important;
+  }
+
+  #insta2,
+  #insta4,
+  #insta3,
+  #insta5 {
+    height: 70px !important;
+    margin-top: 10px !important;
+  }
+
+  .footer {
+    width: 100vw !important;
+    flex-direction: column-reverse !important;
+    justify-content: space-around !important;
+    align-content: space-around !important;
+    text-align: center !important;
+    height: 240px !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+
+  .footer2 {
+    width: 100vw !important;
+    flex-direction: column-reverse !important;
+    justify-content: space-around !important;
+    align-content: space-around !important;
+    text-align: center !important;
+    height: 240px !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+
+  .containertextile2 {
+    display: none !important;
+  }
+
+  .signature {
+    font-size: 8px !important;
+    margin-left: 30px !important;
+  }
+
+  .endnote {
+    width: 300px !important;
+    margin-left: 30px !important;
+  }
+
+  .mailcontact {
+    margin-right: 0px !important;
+    margin-top: 40px !important;
+  }
+
+  .mail {
+    margin-left: 130px !important;
+    margin-top: -40px !important;
+  }
+
+  .formmail {
+    margin-left: 100px !important;
+  }
+
+  .contactme {
+    font-size: 9px !important;
+  }
+
+  #logo {
+    margin-left: -10px !important;
+  }
+
+  .aboutcontainer {
+    height: 540px !important;
+  }
+
+  #salonleila {
+    position: absolute !important;
+    top: 30px !important;
+    left: -100px !important;
+    width: 300px !important;
+  }
+
+  #lineabout {
+    display: none !important;
+  }
+
+  .text1 {
+    display: none !important;
+  }
+
+  .text2 {
+    position: absolute !important;
+    width: 280px !important;
+    top: 530px !important;
+    left: 50px !important;
+  }
+
+  .stylistetitle {
+    position: absolute !important;
+    margin-top: 40px !important;
+    margin-left: 50px !important;
+    font-size: 30px !important;
+    font-weight: bolder !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .menu1 {
+    right: 4% !important;
+  }
+}
+
+
+@media screen and (max-width: 340px) {
+
+  .menu1 {
+    left: 45% !important;
+  }
+}

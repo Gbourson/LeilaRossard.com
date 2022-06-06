@@ -1,0 +1,2068 @@
+@font-face {
+  font-family: "gillsansc";
+  src: url("/fonts/GillSansC.woff2");
+}
+
+@font-face {
+  font-family: "gillsansclight";
+  src: url("/fonts/GillSansLightC.woff2");
+}
+
+@font-face {
+  font-family: "gillsanscbold";
+  src: url("/fonts/GillSansC-Bold.woff2");
+}
+
+@font-face {
+  font-family: "monbaiti";
+  src: url("/fonts/Mongolian\ Baiti.woff2");
+}
+
+@font-face {
+  font-family: "nova";
+  src: url("/fonts/NOVABOLD.otf");
+}
+
+
+a {
+  text-decoration: none !important;
+}
+
+html, body {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  max-width: 2200px;
+}
+
+.header {
+  position: fixed;
+  top: 0%;
+  width: 100vw;
+  height: 80px;
+  background-color: #ece6da;
+  transition: transform 0.4s;
+  z-index: 100;
+}
+
+.scroll-down .header2 {
+  transform: translate3d(0, -100%, 0);
+}
+.scroll-up .header2 {
+  transform: none;
+}
+
+.scroll-down .header {
+  transform: translate3d(0, -100%, 0);
+}
+.scroll-up .header {
+  transform: none;
+}
+
+
+.homelink {
+  text-decoration: none;
+  color: rgb(139, 48, 20) !important;
+}
+
+.header2 {
+  position: fixed;
+  top: 0%;
+  width: 100vw;
+  height: 80px;
+  background-color: #edd4bc;
+  transition: transform 0.4s;
+  z-index: 100;
+}
+
+.menu1 {
+  position: absolute;
+  color: rgb(151, 129, 115);
+  opacity: 100;
+  font-family: "gillsansc";
+  top: 26px;
+  right: 10%;
+  letter-spacing: 3px;
+}
+
+p1 {
+  padding-left: 100px;
+}
+
+.leilarossard {
+  position: absolute;
+  font-family: "gillsansc";
+  color: rgb(139, 48, 20);
+  font-size: 38px;
+  font-weight: bold;
+  top: 20px;
+  left: 5%;
+}
+
+.colors {
+  color: rgb(232, 86, 56);
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
+.colors2 {
+  color: rgb(232, 86, 56);
+  font-size: 25px;
+  font-weight: 1000;
+  letter-spacing: -1px;
+  text-decoration-line: underline;
+  text-underline-offset: 5px;
+}
+
+.colors:hover {
+  font-weight: 1000;
+}
+
+.neutral2:hover {
+  font-weight: 1000;
+}
+
+.neutral {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 1000;
+  letter-spacing: 0px;
+  text-decoration-line: underline;
+  text-underline-offset: 5px;
+}
+
+.neutral2 {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0px;
+}
+
+.about {
+  color: rgb(43, 26, 21);
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0px;
+}
+
+.about:hover {
+  color: rgb(43, 26, 21);
+  font-weight: 1000;
+}
+
+.footer {
+  font-family: "gillsansc";
+}
+
+.footer2 {
+  margin-top: 20px;
+  font-family: "gillsansc" !important;
+}
+
+.artcilecontainer {
+  margin-top: 200px;
+}
+
+.firstblock {
+  display: flex;
+  margin-top: 80px;
+  margin-left: 80px;
+}
+
+.secondblock {
+  width: 100vw;
+  margin-top: 20px;
+  margin-left: 80px;
+}
+
+.thirdblock {
+  display: flex;
+  width: 100vw;
+  margin-top: 20px;
+  margin-left: 80px;
+}
+
+.infocontainer {
+  font-family: "gillsansc";
+  font-size: 12px;
+  align-self: flex-end;
+  margin-left: 50px;
+  color: rgb(87, 83, 83);
+}
+
+.infocontainercolors {
+  font-family: "gillsansc";
+  font-size: 12px;
+  align-self: flex-end;
+  margin-left: 50px;
+  color: rgb(161, 64, 25);
+}
+
+.client,
+.photographe,
+.styliste,
+.production {
+    margin-top: -10px;
+  }
+
+.titlecontainer {
+  font-family: "nova";
+  margin-left: 50px;
+  margin-top: -140px;
+}
+
+.nomadetitle {
+  font-family: "nova";
+  margin-left: 50px;
+  margin-top: -140px;
+}
+
+.brand {
+  font-size: 90px;
+  text-decoration-line: underline;
+  text-underline-offset: 30px;
+}
+
+.brand2 {
+  font-size: 70px;
+  text-decoration-line: overline;
+  color: #c6b9ad;
+}
+
+.brandMONOP {
+  font-size: 100px;
+  color: rgb(248, 81, 39);
+}
+
+.brand2MONOP {
+  margin-top: -60px;
+  font-size: 100px;
+  text-decoration-line: underline;
+  text-underline-offset: -140px;
+  color: rgb(183, 30, 30);
+  text-decoration-color: rgb(248, 81, 39);
+}
+
+.brandADEO {
+  font-size: 100px;
+  color: rgb(236, 170, 72);
+  text-decoration-line: underline;
+  text-underline-offset: 20px;
+}
+
+.brand2ADEO {
+  color: rgb(108, 113, 144);
+  margin-top: -60px;
+  font-size: 100px;
+}
+
+.brandPUCALLPA {
+  font-size: 100px;
+  color: rgb(88, 132, 103);
+}
+
+.brand2PUCALLPA {
+  color: rgb(88, 132, 103);
+  margin-top: -150px;
+  font-size: 100px;
+  text-decoration-line: underline;
+  text-underline-offset: 20px;
+}
+
+.project-namePUCALLPA {
+  color: rgb(182, 94, 53);
+  margin-top: -60px;
+  font-size: 80px;
+}
+
+.pucallpa5 {
+  margin-left: 24px;
+}
+
+.brandAH {
+  font-size: 100px;
+  color: rgb(236, 110, 72);
+  text-decoration-line: underline;
+  text-underline-offset: 20px;
+}
+
+.brand2AH {
+  color: rgb(225, 165, 82);
+  margin-top: -60px;
+  font-size: 100px;
+}
+
+.project-name {
+  font-size: 40px;
+}
+
+.brandARCADES {
+  font-size: 100px;
+  color: rgb(236, 110, 72);
+  text-decoration-line: underline;
+  text-underline-offset: 100px;
+}
+
+.brand2ARCADES {
+  color: rgb(236, 110, 72);
+  margin-top: -150px;
+  font-size: 100px;
+}
+
+.project-nameARCADES {
+  color: rgb(176, 81, 68);
+  margin-top: -60px;
+  font-size: 60px;
+}
+
+.project-nameARCADES2 {
+  color: rgb(176, 81, 68);
+  margin-top: -80px;
+  font-size: 60px;
+}
+
+.brandIRIS {
+  font-size: 100px;
+  color: rgb(60, 105, 78);
+}
+
+.brand2IRIS {
+  color: rgb(60, 105, 78);
+  text-decoration-line: underline;
+  text-underline-offset: 20px;
+  margin-top: -150px;
+  font-size: 100px;
+}
+
+.project-nameIRIS {
+  color: rgb(156, 93, 59);
+  margin-top: -60px;
+  font-size: 80px;
+}
+
+.brandTESTBEAUTE {
+  font-size: 100px;
+  color: rgb(117, 119, 72);
+  text-decoration-line: underline;
+  text-underline-offset: 20px;
+}
+
+.brandBELA {
+  font-size: 100px;
+  text-decoration-line: underline;
+  text-underline-offset: 20px;
+  color: rgb(175, 112, 87);
+}
+
+.brand2BELA {
+  color: rgb(86, 127, 81);
+  margin-top: -80px;
+  font-size: 80px;
+}
+
+.brandPREMIERE {
+  font-size: 100px;
+  text-decoration-line: underline;
+  text-underline-offset: 80px;
+  color: rgb(165, 107, 89);
+}
+
+.brand2PREMIERE {
+  color: rgb(165, 107, 89);
+  margin-top: -140px;
+  font-size: 80px;
+}
+
+.brandESSIXCOLORS {
+  font-size: 100px;
+  text-decoration-line: underline;
+  text-underline-offset: 20px;
+  color: rgb(182, 114, 80);
+}
+
+.brand2ESSIXCOLORS {
+  color: rgb(113, 151, 186);
+  margin-top: -80px;
+  font-size: 80px;
+}
+
+.brandADEOLUMI {
+  font-size: 100px;
+  text-decoration-line: underline;
+  text-underline-offset: 20px;
+  color: rgb(182, 114, 80);
+}
+
+.brand2ADEOLUMI {
+  color: rgb(85, 133, 136);
+  margin-top: -80px;
+  font-size: 80px;
+}
+
+.brandPATCHWORK {
+  font-size: 100px;
+  text-decoration-line: underline;
+  text-underline-offset: 110px;
+  color: rgb(182, 114, 80);
+}
+
+.brand2PATCHWORK {
+  color: rgb(182, 114, 80);
+  margin-top: -160px;
+  font-size: 100px;
+}
+
+.project-namePATCHWORK {
+  color: rgb(116, 112, 80);
+  margin-top: -60px;
+  font-size: 70px;
+}
+
+.brandPESHOOPOM {
+  font-size: 100px;
+  text-decoration-line: underline;
+  text-underline-offset: 30px;
+  color: rgb(231, 111, 64);
+}
+
+.brand2PESHOOPOM {
+  color: rgb(223, 172, 147);
+  margin-top: -60px;
+  font-size: 80px;
+}
+
+.brandPHILWEB {
+  font-size: 100px;
+  text-decoration-line: underline;
+  text-underline-offset: 30px;
+  color: rgb(119, 64, 43);
+}
+
+.brand2PHILWEB {
+  color: rgb(197, 178, 154);
+  margin-top: -60px;
+  font-size: 80px;
+}
+
+.brandNOMADE {
+  font-size: 100px;
+  color: rgb(129, 70, 47);
+}
+
+.brand2NOMADE {
+  color: rgb(129, 70, 47);
+  text-decoration-line: underline;
+  text-underline-offset: 20px;
+  margin-top: -150px;
+  font-size: 100px;
+}
+
+.project-nameNOMADE {
+  color: rgb(184, 180, 154);
+  margin-top: -60px;
+  font-size: 70px;
+}
+
+.brandSALONNATURE {
+  font-size: 100px;
+  color: rgb(129, 70, 47);
+}
+
+.brand2SALONNATURE {
+  color: rgb(129, 70, 47);
+  text-decoration-line: underline;
+  text-underline-offset: 20px;
+  margin-top: -150px;
+  font-size: 100px;
+}
+
+.project-nameSALONNATURE {
+  color: rgb(181, 178, 164);
+  margin-top: -60px;
+  font-size: 70px;
+}
+
+.brandSHOOTTEST {
+  font-size: 100px;
+  color: rgb(109, 63, 45);
+}
+
+.brand2SHOOTTEST {
+  color: rgb(109, 63, 45);
+  text-decoration-line: underline;
+  text-underline-offset: 20px;
+  margin-top: -150px;
+  font-size: 100px;
+}
+
+.brandBRONTE {
+  font-size: 100px;
+  color: rgb(109, 63, 45);
+}
+
+.brand2BRONTE {
+  color: rgb(179, 159, 151);
+  text-decoration-line: underline;
+  text-underline-offset: -100px;
+  text-decoration-color: rgb(109, 63, 45);
+  margin-top: -80px;
+  font-size: 80px;
+}
+
+.brandESSIXPE {
+  font-size: 100px;
+  color: rgb(109, 63, 45);
+}
+
+.brand2ESSIXPE {
+  color: rgb(179, 159, 151);
+  text-decoration-line: underline;
+  text-underline-offset: -100px;
+  text-decoration-color: rgb(109, 63, 45);
+  margin-top: -80px;
+  font-size: 80px;
+}
+
+.brandMILKY {
+  font-size: 100px;
+  color: rgb(109, 63, 45);
+}
+
+.brand2MILKY {
+  color: rgb(109, 63, 45);
+  text-decoration-line: underline;
+  text-underline-offset: 20px;
+  text-decoration-color: rgb(109, 63, 45);
+  margin-top: -140px;
+  font-size: 100px;
+}
+
+.project-nameMILKY {
+  color: rgb(181, 178, 164);
+  margin-top: -40px;
+  font-size: 70px;
+}
+
+.brandESCAPE {
+  font-size: 100px;
+  color: rgb(109, 63, 45);
+  text-decoration-line: underline;
+  text-underline-offset: 20px;
+}
+
+.brand2ESCAPE {
+  color: rgb(181, 178, 164);
+  text-decoration-color: rgb(109, 63, 45);
+  margin-top: -80px;
+  font-size: 70px;
+}
+
+.brandMUMBAI {
+  font-size: 100px;
+  color: rgb(109, 63, 45);
+}
+
+.brand2MUMBAI {
+  color: rgb(109, 63, 45);
+  text-decoration-line: underline;
+  text-underline-offset: 20px;
+  text-decoration-color: rgb(109, 63, 45);
+  margin-top: -140px;
+  font-size: 100px;
+}
+
+.project-nameMUMBAI {
+  color: rgb(181, 178, 164);
+  margin-top: -40px;
+  font-size: 70px;
+}
+
+.brandGINGER {
+  font-size: 100px;
+  color: rgb(109, 63, 45);
+}
+
+.brand2GINGER {
+  color: rgb(181, 178, 164);
+  text-decoration-line: underline;
+  text-underline-offset: -100px;
+  text-decoration-color: rgb(109, 63, 45);
+  margin-top: -80px;
+  font-size: 70px;
+}
+
+
+
+#photo4PESHOO {
+  margin-left: 16px;
+}
+#photo6PESHOO {
+  margin-left: 16px;
+}
+#photo8PESHOO {
+  margin-left: 16px;
+}
+
+#photo3PATCHWORK {
+  margin-left: 16px;
+}
+
+#photo4ESSIXCOLORS {
+  margin-left: 16px;
+}
+
+#photo4BELA {
+  margin-left: 16px;
+}
+
+#photo2,
+#photo5 {
+  margin-left: 20px;
+}
+
+#photo1-salonnature {
+  width: 1025px;
+}
+
+#photo2-salonnature {
+  margin-bottom: 200px;
+}
+
+#photo3-salonnature,
+#photo5-salonnature {
+  margin-left: 20px;
+}
+
+.secondblock-salonnature {
+  width: 100vw;
+  height: 1470px;
+  margin-top: 20px;
+  margin-left: 80px;
+}
+
+.thirdblock-salonnature {
+  position: absolute;
+  top: 1655px;
+  margin-left: 80px;
+  padding-bottom: 100px;
+}
+
+.infocontainersalonnature {
+  position: absolute;
+  font-size: 12px;
+  font-family: "gillsansc";
+  width: 300px;
+  left: 1280px;
+  top: 750px;
+  color: rgb(87, 83, 83);
+}
+
+.titlecontaineradeo {
+  font-family: "nova";
+  margin-left: 200px;
+}
+
+#photoadeo {
+  margin-left: 20px;
+}
+
+#adeolampe2 {
+  margin-left: 24px;
+}
+#adeolampe3 {
+  margin-left: 24px;
+}
+
+.infocontainerbronte {
+  position: absolute;
+  font-size: 12px;
+  font-family: "gillsansc";
+  left: 1350px;
+  top: 740px;
+  color: rgb(87, 83, 83);
+}
+
+.secondblockweb {
+  height: 1700px;
+}
+
+.web1 {
+  position: absolute;
+  top: 770px;
+  left: 60px;
+}
+.web2 {
+  position: absolute;
+  top: 770px;
+  left: 520px;
+}
+.web3 {
+  position: absolute;
+  top: 1083px;
+  left: 60px;
+}
+.web4 {
+  position: absolute;
+  top: 1325px;
+  left: 520px;
+}
+.web5 {
+  position: absolute;
+  top: 1760px;
+  left: 60px;
+}
+.web6 {
+  position: absolute;
+  top: 1880px;
+  left: 520px;
+}
+
+.infocontainerweb {
+  position: absolute;
+  font-size: 12px;
+  font-family: "gillsansc";
+  top: 2360px;
+  left: 1380px;
+  color: rgb(87, 83, 83);
+}
+
+
+.cuisine1 {
+  position: absolute;
+  margin-top: 20px;
+  left: 80px;
+}
+
+.cuisine2 {
+  position: absolute;
+  margin-top: 20px;
+  left: 700px;
+}
+
+.cuisine3 {
+  position: absolute;
+  top: 2700px;
+  left: 80px;
+}
+
+.cuisine4 {
+  position: absolute;
+  top: 2550px;
+  left: 700px;
+}
+
+.cuisine5 {
+  position: absolute;
+  top: 3320px;
+  left: 80px;
+}
+
+.infocontainercuisine {
+  position: absolute;
+  font-size: 12px;
+  font-family: "gillsansc";
+  top: 4080px;
+  left: 1350px;
+  color: rgb(87, 83, 83);
+}
+
+.infocontainerPREMIERE,
+.infocontaineTESTBEAUTE,
+.infocontainerSHOO {
+  font-family: "gillsansc";
+  font-size: 12px;
+  align-self: flex-end;
+  margin-left: 50px;
+  color: rgb(161, 64, 25);
+}
+
+.infocontaineressix {
+  font-family: "gillsansc";
+  font-size: 12px;
+  align-self: flex-end;
+  margin-left: 50px;
+  color: rgb(87, 83, 83);
+}
+
+.infocontainerresine {
+  position: absolute;
+  font-size: 12px;
+  font-family: "gillsansc";
+  top: 1090px;
+  left: 1270px;
+  color: rgb(161, 64, 25);
+}
+
+.infocontainerAH {
+  position: absolute;
+  font-size: 12px;
+  font-family: "gillsansc";
+  left: 1230px;
+  top: 2360px;
+  color: rgb(161, 64, 25);
+}
+
+.footer {
+  display: flex;
+  width: 100vw;
+  height: 200px;
+  margin-top: 40px;
+  justify-content: space-between;
+  background-color: rgb(170, 166, 148);
+}
+
+.footer2 {
+  display: flex;
+  width: 100vw;
+  height: 200px;
+  margin-top: 40px;
+  justify-content: space-between;
+  background-color: rgb(130, 81, 58);
+}
+
+.signature {
+  font-size: 10px;
+  letter-spacing: 4px;
+  margin-left: 100px;
+  margin-top: 50px;
+  color: rgb(255, 255, 255);
+}
+
+.endnote {
+  color: #000000;
+  font-family: "monbaiti";
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 1px;
+}
+
+#copyright {
+  padding-right: 10px;
+  padding-top: 20px;
+}
+
+.mailcontact {
+  margin-right: 200px;
+  margin-top: 80px;
+  letter-spacing: 1px;
+  color: rgb(255, 255, 255);
+}
+
+.formmail {
+  display: flex;
+  height: 30px;
+  width: 165px;
+  align-items: center;
+  border-right: solid white 2px;
+  border-top: solid white 2px;
+  border-bottom: solid white 2px;
+}
+
+#arrowmail {
+  width: 30px;
+  height: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: end;
+}
+
+.contactme {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  font-family: "gillsansc";
+  letter-spacing: 3px;
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  border: solid white 2px;
+}
+
+.mail {
+  position: absolute;
+  font-family: "gillsansclight";
+  font-weight: lighter;
+  margin-left: 124px;
+  margin-top: -45px;
+}
+
+.follow {
+  font-family: "gillsansclight";
+  font-weight: 1000;
+  color: rgb(83, 77, 77);
+}
+
+#logo {
+  color: rgb(255, 255, 255);
+  width: 30px;
+  margin-top: 20px;
+  margin-left: 2px;
+}
+
+.blockphoto4 {
+  display: grid;
+  width: 500px;
+  grid-template-columns: 310px 150px;
+  grid-template-rows: 455px 80px;
+  column-gap: 10px;
+  row-gap: 15px;
+}
+
+.resineblock {
+  display: flex;
+  flex-direction: column;
+}
+
+#photo5resine {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+
+
+@media screen and (max-width: 1500px) {
+  .menu1 {
+    right: 20% !important;
+  }
+
+  .nomadetitle {
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 0px;
+    top: -100px;
+    left: 850px;
+  }
+
+  .titlecontainer, .titlecontaineradeo {
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 0px;
+    top: -100px;
+    left: 850px;
+  }
+
+  .infocontainerresine {
+    position: absolute;
+    top: 2550px;
+    left: 850px;
+  }
+
+  .infocontainercuisine {
+    position: relative;
+  }
+
+  #photo,
+  #photo1,
+  #photo2,
+  #photo3,
+  #photo4,
+  #photo5,
+  #photo6,
+  #photo7,
+  #photo8,
+  #photo6PESHOO,
+  #photo8PESHOO,
+  #photo4PESHOO,
+  #photo4BELA,
+  #photoadeo,
+  #adeolampe3,
+  #adeolampe2,
+  #photo5resine,
+  #photo4ESSIXCOLORS,
+  #photo3PATCHWORK
+   {
+    position: relative !important;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    width: 750px;
+  }
+
+  #photo2-salonnature,
+  #photo5-salonnature,
+  #photo3-salonnature,
+  #photo4-salonnature,
+  #photo6-salonnature {
+    position: relative !important;
+    top: 0 !important;
+    left: 0px !important;
+    margin-top: 20px;
+    margin-bottom: 0;
+    width: 750px;
+    align-self: center !important;
+  }
+
+  #photo3-salonnature {
+    margin-left: 0px;
+  }
+
+  #photo4-salonnature, #photo5-salonnature {
+    margin-left: 40px;
+  }
+
+  .infocontainersalonnature {
+    position: relative;
+    top: -60px;
+    left: 860px;
+  }
+
+  .web1, .web2, .web3, .web4, .web5, .web6 {
+    position: relative;
+    top: 0;
+    left: 40px;
+  }
+
+  .web-1, .web0 {
+    margin-left: 80px !important;
+  }
+
+  .cuisine1, .cuisine2, .cuisine3, .cuisine4, .cuisine5, .cuisine6 {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .secondblockweb {
+    height: fit-content;
+  }
+
+  .infocontainerweb {
+    position: relative;
+    top: -60px;
+    left: 880px;
+  }
+
+  .artcilecontainer {
+    margin-top: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: space-around;
+  }
+
+  .firstblock,
+  .secondblock,
+  .thirdblock,
+  .blockphoto4,
+  .thirdblock,
+  .secondblockcuisine {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    text-align: start;
+    justify-items: start;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+
+   .thirdblock-salonnature {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin-left: 0;
+  }
+  .secondblock-salonnature {
+    height: fit-content;
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  p {
+    font-size: 10px;
+  }
+
+  .leilarossard {
+    font-size: 26px;
+  }
+
+  .menu1 {
+    width: 100px;
+    top: 15px;
+    right: 15% !important;
+  }
+
+  .artcilecontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+  }
+
+  .firstblock,
+  .secondblock,
+  .thirdblock,
+  .secondblockweb,
+  .blockphoto4,
+  .thirdblock,
+  .secondblockcuisine {
+    display: flex;
+    width: 100vw;
+    text-align: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+  .secondblock-salonnature {
+    height: fit-content;
+  }
+
+
+  .nomadetitle {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    order: -1 !important;
+  }
+
+  .titlecontainer {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    order: -1 !important;
+  }
+
+  .titlecontaineradeo {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    order: -1 !important;
+  }
+
+  .brandPHILWEB {
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+  }
+
+  .brand2PHILWEB {
+    font-size: 20px;
+    margin-top: -20px;
+  }
+
+  .brandNOMADE {
+    font-size: 30px;
+    margin-top: 0px;
+  }
+
+  .brand2NOMADE {
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+    margin-top: -48px;
+  }
+
+  .project-nameNOMADE {
+    font-size: 20px;
+    margin-top: -20px;
+  }
+
+  .brandSALONNATURE {
+    font-size: 30px;
+    margin-top: 0px;
+  }
+
+  .brand2SALONNATURE {
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+    margin-top: -48px;
+  }
+
+  .project-nameSALONNATURE {
+    font-size: 20px;
+    margin-top: -20px;
+  }
+
+  .brandSHOOTTEST {
+    font-size: 30px;
+  }
+
+  .brand2SHOOTTEST {
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+    margin-top: -40px;
+  }
+
+  .brandBRONTE {
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+  }
+
+  .brand2BRONTE {
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: -20px;
+  }
+
+  .brandESSIXPE {
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+  }
+
+  .brand2ESSIXPE {
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: -20px;
+  }
+
+  .brandMILKY {
+    font-size: 30px;
+    text-decoration: none;
+    margin-top: 0px;
+  }
+
+  .brand2MILKY {
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+    margin-top: -48px;
+  }
+
+  .project-nameMILKY {
+    font-size: 20px;
+    margin-top: -20px;
+  }
+
+  .brandESCAPE {
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+  }
+
+  .brand2ESCAPE {
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: -20px;
+  }
+
+  .brandMONOP {
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-underline-offset: 5px;
+    -webkit-text-underline-offset: 10px;
+  }
+
+  .brand2MONOP {
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: -20px;
+  }
+
+  .brandADEO {
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+  }
+
+  .brand2ADEO {
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: -20px;
+  }
+
+  .brandPESHOOPOM {
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+  }
+
+  .brand2PESHOOPOM {
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: -20px;
+  }
+
+  .brandPUCALLPA {
+    font-size: 30px;
+    text-decoration: none;
+  }
+
+  .brand2PUCALLPA {
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+    margin-top: -48px;
+  }
+
+  .project-namePUCALLPA {
+    font-size: 20px;
+    margin-top: -24px;
+  }
+
+  .brandAH {
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+  }
+
+  .brand2AH {
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: -20px;
+  }
+
+  .brandARCADES {
+    font-size: 30px;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+
+  .brand2ARCADES {
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+    margin-top: -48px;
+  }
+
+  .project-nameARCADES {
+    font-size: 18px;
+    margin-top: -24px;
+  }
+
+  .project-nameARCADES2 {
+    font-size: 18px;
+    margin-top: -26px;
+  }
+
+  .brandIRIS {
+    font-size: 30px;
+    text-decoration: none;
+  }
+
+  .brand2IRIS {
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+    margin-top: -48px;
+  }
+
+  .project-nameIRIS {
+    font-size: 20px;
+    margin-top: -26px;
+  }
+
+  .brandTESTBEAUTE {
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+    margin-top: 40px;
+  }
+
+  .brandBELA {
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+  }
+
+  .brand2BELA {
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: -20px;
+  }
+
+  .brandPREMIERE {
+    font-size: 30px;
+    text-decoration: none;
+  }
+
+  .brand2PREMIERE {
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+    margin-top: -48px;
+  }
+
+  .web-1, .web0 {
+    margin-left: 0px !important;
+  }
+
+  #photo1 {
+    position: relative;
+    margin-top: 20px;
+    width: 300px;
+  }
+
+  #photo,
+  #photo1,
+  #photo2,
+  #photo3,
+  #photo4,
+  #photo5,
+  #photo6,
+  #photo7,
+  #photo8,
+  #photo6PESHOO,
+  #photo8PESHOO,
+  #photo4PESHOO,
+  #photo4BELA,
+  #photoadeo,
+  #adeolampe3,
+  #adeolampe2,
+  #photo5resine,
+  #photo2-salonnature,
+  #photo3-salonnature,
+  #photo4-salonnature,
+  #photo5-salonnature,
+  #photo6-salonnature {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    width: 700px;
+  }
+
+  #photoadeo {
+    align-self: center;
+  }
+
+  .web1,
+  .web2,
+  .web3,
+  .web4,
+  .web5,
+  .cuisine1,
+  .cuisine2,
+  .cuisine3,
+  .cuisine4,
+  .cuisine5,
+  .cuisine6 {
+    position: relative !important;
+    top: 0px !important;
+    left: 0px !important;
+  }
+
+  .web6 {
+    display: non;
+  }
+
+  .secondblockweb {
+    height: fit-content;
+  }
+
+  .secondblockcuisine {
+    height: fit-content;
+  }
+
+  .infocontainerweb,
+  .infocontainerAH,
+  .infocontainersalonnature {
+    position: relative;
+    margin-top: 40px;
+    text-align: start;
+    top: -20px;
+    left: -270px;
+  }
+
+  .infocontainerresine {
+    position: relative;
+    margin-top: 40px;
+    text-align: start;
+    top: -20px;
+    left: -255px;
+  }
+
+  .infocontainerPREMIERE {
+    position: relative;
+    margin-top: 40px;
+    text-align: start;
+    top: -20px;
+    left: -285px !important;
+  }
+
+  .infocontaineTESTBEAUTE {
+    position: relative;
+    margin-top: 40px;
+    text-align: start;
+    top: -20px;
+    left: -285px;
+  }
+
+  .infocontainerSHOO {
+    position: relative;
+    margin-top: 40px;
+    text-align: start;
+    top: -20px;
+    left: -290px;
+  }
+
+  .infocontainer {
+    position: relative;
+    margin-top: 40px;
+    text-align: start;
+    top: -20px;
+    left: -280px;
+  }
+
+  .infocontainercolors {
+    position: relative;
+    margin-top: 40px;
+    text-align: start;
+    top: -20px;
+    left: -280px;
+  }
+
+  .infocontainerbronte,
+  .infocontainercuisine {
+    position: relative;
+    margin-top: 40px;
+    text-align: start;
+    top: -20px;
+    left: -260px;
+  }
+
+  .client,
+  .photographe,
+  .styliste,
+  .production {
+    margin-top: -8px;
+  }
+
+  .colors,
+  .colors2,
+  .about,
+  .about2,
+  .neutral,
+  .neutral2 {
+    font-size: 12px !important;
+    text-decoration: none !important;
+  }
+
+  .header2, .header {
+    height: 100px !important;
+  }
+
+}
+
+@media screen and (max-width: 430px) {
+  p {
+    font-size: 10px;
+  }
+
+  .leilarossard {
+    font-size: 26px;
+  }
+
+  .menu1 {
+    width: 100px;
+    top: 15px;
+    left: 220px;
+  }
+
+  .artcilecontainer {
+    display: flex;
+    margin-top: 80px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+  }
+
+  .firstblock,
+  .secondblock,
+  .thirdblock,
+  .secondblockweb,
+  .blockphoto4,
+  .thirdblock,
+  .secondblock-salonnature,
+  .secondblockcuisine {
+    display: flex;
+    width: 100vw;
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+
+
+  .brandPHILWEB {
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+  }
+
+  .brand2PHILWEB {
+    font-size: 20px;
+    margin-top: -20px;
+  }
+
+  .brandNOMADE {
+    font-size: 30px;
+    margin-top: 0px;
+  }
+
+  .brand2NOMADE {
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+    margin-top: -48px;
+  }
+
+  .project-nameNOMADE {
+    font-size: 20px;
+    margin-top: -20px;
+  }
+
+  .brandSALONNATURE {
+    font-size: 30px;
+    margin-top: 0px;
+  }
+
+  .brand2SALONNATURE {
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+    margin-top: -48px;
+  }
+
+  .project-nameSALONNATURE {
+    font-size: 20px;
+    margin-top: -20px;
+  }
+
+  .brandSHOOTTEST {
+    font-size: 30px;
+  }
+
+  .brand2SHOOTTEST {
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+    margin-top: -40px;
+  }
+
+  .brandBRONTE {
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+  }
+
+  .brand2BRONTE {
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: -20px;
+  }
+
+  .brandESSIXPE {
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+  }
+
+  .brand2ESSIXPE {
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: -20px;
+  }
+
+  .brandMILKY {
+    font-size: 30px;
+    text-decoration: none;
+    margin-top: 0px;
+  }
+
+  .brand2MILKY {
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+    margin-top: -48px;
+  }
+
+  .project-nameMILKY {
+    font-size: 20px;
+    margin-top: -20px;
+  }
+
+  .brandESCAPE {
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+  }
+
+  .brand2ESCAPE {
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: -20px;
+  }
+
+  .brandMONOP {
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-underline-offset: 5px;
+    -webkit-text-underline-offset: 10px;
+  }
+
+  .brand2MONOP {
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: -20px;
+  }
+
+  .brandADEO {
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+  }
+
+  .brand2ADEO {
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: -20px;
+  }
+
+  .brandPESHOOPOM {
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+  }
+
+  .brand2PESHOOPOM {
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: -20px;
+  }
+
+  .brandPUCALLPA {
+    font-size: 30px;
+    text-decoration: none;
+  }
+
+  .brand2PUCALLPA {
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+    margin-top: -48px;
+  }
+
+  .project-namePUCALLPA {
+    font-size: 20px;
+    margin-top: -24px;
+  }
+
+  .brandAH {
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+  }
+
+  .brand2AH {
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: -20px;
+  }
+
+  .brandARCADES {
+    font-size: 30px;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+
+  .brand2ARCADES {
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+    margin-top: -48px;
+  }
+
+  .project-nameARCADES {
+    font-size: 18px;
+    margin-top: -24px;
+  }
+
+  .project-nameARCADES2 {
+    font-size: 18px;
+    margin-top: -26px;
+  }
+
+  .brandIRIS {
+    font-size: 30px;
+    text-decoration: none;
+  }
+
+  .brand2IRIS {
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+    margin-top: -48px;
+  }
+
+  .project-nameIRIS {
+    font-size: 20px;
+    margin-top: -26px;
+  }
+
+  .brandTESTBEAUTE {
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+    margin-top: 40px;
+  }
+
+  .brandBELA {
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+  }
+
+  .brand2BELA {
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: -20px;
+  }
+
+  .brandPREMIERE {
+    font-size: 30px;
+    text-decoration: none;
+  }
+
+  .brand2PREMIERE {
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+    margin-top: -48px;
+  }
+
+  #photo1 {
+    position: relative;
+    margin-top: 20px;
+    width: 300px;
+  }
+
+  #photo,
+  #photo2,
+  #photo3,
+  #photo4,
+  #photo5,
+  #photo6,
+  #photo7,
+  #photo8,
+  #photo6PESHOO,
+  #photo8PESHOO,
+  #photo4PESHOO,
+  #photo4BELA,
+  #photoadeo,
+  #adeolampe3,
+  #adeolampe2,
+  #photo5resine,
+  #photo2-salonnature,
+  #photo3-salonnature,
+  #photo4-salonnature,
+  #photo5-salonnature,
+  #photo6-salonnature {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    width: 300px;
+  }
+
+  .web1,
+  .web2,
+  .web3,
+  .web4,
+  .web5,
+  .cuisine1,
+  .cuisine2,
+  .cuisine3,
+  .cuisine4,
+  .cuisine5,
+  .cuisine6 {
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+
+  .web6 {
+    display: none;
+  }
+
+  .infocontainerweb,
+  .infocontainerAH,
+  .infocontainersalonnature {
+    position: relative;
+    margin-top: 40px;
+    text-align: start;
+    top: -20px;
+    left: 0px;
+  }
+
+  .infocontainersalonnature {
+    position: relative;
+    margin-top: 40px;
+    top: -20px;
+    left: 60px;
+  }
+
+  .infocontainerresine {
+    position: relative;
+    margin-top: 40px;
+    text-align: start;
+    top: -20px;
+    left: 5px;
+  }
+
+  .infocontainerPREMIERE {
+    position: relative;
+    margin-top: 40px;
+    text-align: start;
+    top: -20px;
+    left: -135px !important;
+  }
+
+  .infocontaineTESTBEAUTE {
+    position: relative;
+    margin-top: 40px;
+    text-align: start;
+    top: -20px;
+    left: -125px;
+  }
+
+  .infocontainerSHOO {
+    position: relative;
+    margin-top: 40px;
+    text-align: start;
+    top: -20px;
+    left: -140px;
+  }
+
+  .infocontainer {
+    position: relative;
+    margin-top: 40px;
+    text-align: start;
+    top: -20px;
+    left: -110px;
+  }
+  .infocontaineressix {
+    position: relative;
+    margin-top: 40px;
+    text-align: start;
+    top: -20px;
+    left: -130px;
+  }
+
+  .infocontainercolors {
+    position: relative;
+    margin-top: 40px;
+    text-align: start;
+    top: -20px;
+    left: -110px;
+  }
+
+  .infocontainerbronte,
+  .infocontainercuisine {
+    position: relative;
+    margin-top: 40px;
+    text-align: start;
+    top: -20px;
+    left: 0px;
+  }
+
+  .client,
+  .photographe,
+  .styliste,
+  .production {
+    margin-top: -8px;
+  }
+
+  .colors,
+  .colors2,
+  .about,
+  .about2,
+  .neutral,
+  .neutral2 {
+    font-size: 12px !important;
+    text-decoration: none !important;
+  }
+
+  .header2, .header {
+    height: 80px !important;
+  }
+
+  .footer {
+    width: 100vw;
+    height: 240px;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-content: space-around;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .footer2 {
+    width: 100vw;
+    height: 240px;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-content: space-around;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .signature {
+    font-size: 8px;
+    margin-left: 10px;
+  }
+
+  .endnote {
+    width: 300px;
+    text-align: start;
+    margin-left: 30px;
+  }
+
+  .mailcontact {
+    margin-right: 0px;
+    margin-top: 40px;
+  }
+
+  .mail {
+    margin-left: 130px;
+    margin-top: -40px;
+  }
+
+  .formmail {
+    margin-left: 100px;
+  }
+
+  .contactme {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+
+  .menu1 {
+    left: 180px !important;
+  }
+}
+
+@media screen and (max-width: 330px) {
+
+  .menu1 {
+    left: 150px !important;
+  }
+}
